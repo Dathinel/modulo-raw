@@ -11,6 +11,7 @@
 <p align="center">
   <a href="#licencia"><img src="https://img.shields.io/badge/c%C3%B3digo-GPLv3-E8833A?style=flat-square&labelColor=1D1D1D" alt="Código GPLv3"></a>
   <a href="https://github.com/Dathinel/modulo-raw/releases/latest"><img src="https://img.shields.io/github/v/release/Dathinel/modulo-raw?style=flat-square&labelColor=1D1D1D&color=E8833A&label=versi%C3%B3n" alt="Última versión"></a>
+  <img src="https://img.shields.io/badge/contenido-2_funciones-E8833A?style=flat-square&labelColor=1D1D1D" alt="Contenido: 2 funciones">
   <img src="https://img.shields.io/badge/formato-.paquete-E8833A?style=flat-square&labelColor=1D1D1D" alt="Formato .paquete">
   <a href="https://github.com/Dathinel/rodaje"><img src="https://img.shields.io/badge/para-Rodaje-E8833A?style=flat-square&labelColor=1D1D1D" alt="Para Rodaje"></a>
 </p>
@@ -26,7 +27,7 @@ No usa modelos.
 
 ## Instalar en Rodaje
 
-En Rodaje, Complementos → Instalar lo baja, comprueba la firma del catálogo y el hash, lo instala y baja sus modelos. A mano: descarga `modulo-raw-1.0.0.paquete` de las [releases](https://github.com/Dathinel/modulo-raw/releases) y usa «Instalar desde archivo…» en Complementos; después, «Bajar modelos».
+En Rodaje, Complementos → Instalar lo baja, comprueba la firma del catálogo y el hash, y lo instala. A mano: descarga `modulo-raw-<versión>.paquete` de las [releases](https://github.com/Dathinel/modulo-raw/releases) y usa «Instalar desde archivo…» en Complementos. Más detalles en la [guía de complementos](https://github.com/Dathinel/rodaje/blob/main/docs/guia/complementos.md).
 
 ## Código
 
