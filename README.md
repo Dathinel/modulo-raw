@@ -11,7 +11,7 @@
 <p align="center">
   <a href="#licencia"><img src="https://img.shields.io/badge/c%C3%B3digo-GPLv3-E8833A?style=flat-square&labelColor=1D1D1D" alt="Código GPLv3"></a>
   <a href="https://github.com/Dathinel/modulo-raw/releases/latest"><img src="https://img.shields.io/github/v/release/Dathinel/modulo-raw?style=flat-square&labelColor=1D1D1D&color=E8833A&label=versi%C3%B3n" alt="Última versión"></a>
-  <img src="https://img.shields.io/badge/contenido-2_funciones-E8833A?style=flat-square&labelColor=1D1D1D" alt="Contenido: 2 funciones">
+  <img src="https://img.shields.io/badge/contenido-3_funciones-E8833A?style=flat-square&labelColor=1D1D1D" alt="Contenido: 3 funciones">
   <img src="https://img.shields.io/badge/formato-.paquete-E8833A?style=flat-square&labelColor=1D1D1D" alt="Formato .paquete">
   <a href="https://github.com/Dathinel/rodaje"><img src="https://img.shields.io/badge/para-Rodaje-E8833A?style=flat-square&labelColor=1D1D1D" alt="Para Rodaje"></a>
 </p>
@@ -20,8 +20,11 @@
 |---|---|
 | `info` | Tamaño, cámara, balance y cadencia de un cuadro RAW |
 | `revelar` | Revelar cuadros RAW (CinemaDNG) con LibRaw |
+| `mosaico` | Mosaico Bayer sin interpolar para el revelado en la GPU |
 
 Corre en: CPU. Motor: LibRaw 0.22.2 (LGPL-2.1, `libraw.dll` oficial sin modificar). Rodaje lo abre como un proceso aparte y le habla por una tubería con nombre ([protocolo de módulos](https://github.com/Dathinel/rodaje/blob/main/docs/protocolo-modulos.md)); lo que devuelve es una propuesta que se aplica como un paso del historial (Ctrl+Z la deshace).
+
+Desde 1.1, `mosaico` entrega el mosaico Bayer sin interpolar para que Rodaje 1.0.3 o posterior lo revele en la GPU (Malvar-He-Cutler en Direct3D 11); sin GPU, con Rodaje anterior o con RAW que no es Bayer sigue revelando con LibRaw en la CPU (`revelar`).
 
 No usa modelos.
 
